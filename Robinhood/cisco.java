@@ -217,21 +217,21 @@ public class solution {
 		  
 		  while(w1<=w2 && h1<=h2) {
 			  System.out.println(w1+" "+h1+" "+" "+w2+" "+h2);
-			  /*上*/
+			  /*脡脧*/
 			  for(int i = w1; i <=w2;i++) {
 				  result.add(matrix[h1][i]); 
 			  }
-			  /*右*/
+			  /*脫脪*/
 			  for(int i = h1+1; i <h2;i++) {
 				  result.add(matrix[i][w2]); 
 			  }
-			  /*下*/
+			  /*脧脗*/
 			  if(h1!=h2 ) {
 			  for(int i = w2; i>=w1;i--) {
 				  result.add(matrix[h2][i]);
 			  }
 			  }
-			  /*左*/
+			  /*脳贸*/
 			  if(w1!=w2) {
 			  for(int i = h2-1; i>h1; i--) {
 				  result.add(matrix[i][w1]);
@@ -264,19 +264,19 @@ public class solution {
 	  
 	      int number =1 ;
 	      while(w1<=w2) {
-	    	  /*上*/
+	    	  /*脡脧*/
 	    	  for(int i =w1; i<=w2;i ++) {
 	    		  result[w1][i]= number;
 	    		  number++;
 	    	  }
 	    	
-	    	/*右*/
+	    	/*脫脪*/
 	    	  for(int i = w1+1 ; i<w2;i ++) {
 	    		  result[i][w2]= number;
 	    		  number++;
 	    	  }
 	    	  
-	    	 /*下*/
+	    	 /*脧脗*/
 	    	if(w1!=w2) {
 	    	  for(int i = w2; i >=w1; i--) {
 	    		  result[w2][i]= number;
@@ -285,7 +285,7 @@ public class solution {
 	    	}
 	    	  
 	    	  
-	    	  /*左*/
+	    	  /*脳贸*/
 	    	  for(int i = w2-1; i >w1; i--) {
 	    		  result[i][w1]= number;
 	    		  number++;
